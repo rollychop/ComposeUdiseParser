@@ -47,11 +47,6 @@ fun HomeScreen() {
     val window = LocalWindow.current
 
     Scaffold(
-        topBar = {
-            TopAppBar(
-                title = { Text("Udise Parser") },
-            )
-        },
         bottomBar = {
             if (files.value.isNotEmpty()) {
                 Column(
